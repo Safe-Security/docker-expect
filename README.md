@@ -4,8 +4,5 @@ A dockerized image to run `expect` commands based on Alpine:3.15. This image com
 
 ## Usage
 
-To run the image as the container, use command.<br/>
-`docker run --rm -v "${PWD}:/home/mount" --name expect_container safesecurity/expect:latest`
-
-To enter inside the container (move to `sh` terminal).<br/>
-`docker run -it --rm -v "${PWD}:/home/mount" --name expect_container safesecurity/expect:latest sh`
+Use this command to run the container and start a `sh` terminal inside the container).<br/>
+`docker run --rm -it -v "${PWD}:/home/mount" --name expect_container safesecurity/expect:latest`
